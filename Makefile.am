@@ -20,3 +20,6 @@ bin_PROGRAMS= zed   # Give the program any name.
 zed_SOURCES= src/main.cpp  # Will output (main.o)
 # Link the program against LIBRARIES [pro_name_LDADD = ../lib/libcexample.a]
 zed_LDADD= libimath.la
+
+
+ACLOCAL_AMFLAGS= -I m4

@@ -1,5 +1,8 @@
 #include <stdio.h>
-#include "imath.h"
+extern "C"
+{
+    #include <imath.h>
+}
 
 int main()
 {
