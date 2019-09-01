@@ -2,6 +2,7 @@
 AC_INIT(zed, 1.00)
 AC_PREREQ([2.62])
 
+AC_CONFIG_MACRO_DIRS([m4])
 # Don't trigger errors/warning because of the 'AUTHORS,...etc' package files.          
 AM_INIT_AUTOMAKE([foreign tar-ustar])
 
@@ -31,6 +32,8 @@ WFLAGS= -Wall -Wextra \
 # Broadcast the variable "WFLAGS" to all Makefile listedd in "AC_CONFIG_FILES".
 AC_SUBST(WFLAGS, [$WFLAGS])
 
+# Use the "libtoolize" command.
+LT_INIT
 # Needed to build a "Shared/Dynamic" libraries.
 AC_ENABLE_SHARED
 AC_DISABLE_STATIC
