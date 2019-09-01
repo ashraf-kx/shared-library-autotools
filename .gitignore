@@ -26,3 +26,4 @@ libimath.la
 .libs/
 
 main.o
+zed
