@@ -1,5 +1,7 @@
 # [Required] Program name + version.
 AC_INIT(zed, 1.00)
+AC_PREREQ([2.62])
+
 # Don't trigger errors/warning because of the 'AUTHORS,...etc' package files.          
 AM_INIT_AUTOMAKE([foreign tar-ustar])
 
