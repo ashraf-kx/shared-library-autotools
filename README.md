@@ -6,9 +6,7 @@
 ```
 autoscan
 ```
-2.
-```
-3. On UNIX-alike systems:
+2. On UNIX-alike systems:
 ```
 libtoolize
 ```
@@ -16,23 +14,23 @@ On iOS :
 ```
 glibtoolize
 ```
-4. 
+3. 
 ```
 aclocal
 ```
-5. 
+4. 
 ```
 autoconf
 ```
-6. 
+5. 
 ```
 automake --add-missing
 ```
-7. 
+6. 
 ```
 make
 ```
-8. if you want to use it in any other project (example Qt project) install it BOTHER.
+7. if you want to use it in any other project (example Qt project) install it BOTHER.
 ```
 make install
 ```
