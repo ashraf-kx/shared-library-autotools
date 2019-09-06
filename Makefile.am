@@ -12,14 +12,13 @@ libimath_la_SOURCES= iMath/imath.h iMath/imath.c # List the Libs-source-files.
 libimath_la_CFLAGS = $(AM_CFLAGS)	# Assign Compiler-flags.
 include_HEADERS = iMath/imath.h     # headers included into the package [usr/include/..]
 
-
 #------------ C++ ------------#
-SUBDIRS += src		# add the folder containing 'sources/headers'.
-bin_PROGRAMS= zed   # Give the program any name.
-# list all sources/headers to build the 'zed' program.
-zed_SOURCES= src/main.cpp  # Will output (main.o)
-# Link the program against LIBRARIES [pro_name_LDADD = ../lib/libcexample.a]
-zed_LDADD= libimath.la
+# SUBDIRS += src		# add the folder containing 'sources/headers'.
+# bin_PROGRAMS= zed   # Give the program any name.
+# # list all sources/headers to build the 'zed' program.
+# zed_SOURCES= src/main.cpp  # Will output (main.o)
+# # Link the program against LIBRARIES [pro_name_LDADD = ../lib/libcexample.a]
+# zed_LDADD= libimath.la
 
 
 ACLOCAL_AMFLAGS= -I m4
