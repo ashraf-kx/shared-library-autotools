@@ -10,6 +10,7 @@ AM_CPPFLAGS = -DLOCALEDIR="\"$(localedir)\"" # CPPFlags.
 lib_LTLIBRARIES = libimath.la	     # Create the Shared library using libtoolize. 
 libimath_la_SOURCES= iMath/imath.h iMath/imath.c # List the Libs-source-files.
 libimath_la_CFLAGS = $(AM_CFLAGS)	# Assign Compiler-flags.
+libimath_la_LDFLAGS = -no-undefined
 include_HEADERS = iMath/imath.h     # headers included into the package [usr/include/..]
 
 #------------ C++ ------------#
@@ -19,6 +20,5 @@ include_HEADERS = iMath/imath.h     # headers included into the package [usr/inc
 # zed_SOURCES= src/main.cpp  # Will output (main.o)
 # # Link the program against LIBRARIES [pro_name_LDADD = ../lib/libcexample.a]
 # zed_LDADD= libimath.la
-
 
 ACLOCAL_AMFLAGS= -I m4

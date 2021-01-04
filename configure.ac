@@ -11,7 +11,7 @@ AC_PROG_CXX
 AC_PROG_CC
  
 AC_C_INLINE	# compilers will understand the "inline" keyword in C/C++ Code.
-
+AC_PROG_MAKE_SET
 # Warning "Flags" for the Compilers.
 WFLAGS= -Wall -Wextra \
          -Wno-missing-field-initializers \
@@ -33,10 +33,10 @@ WFLAGS= -Wall -Wextra \
 AC_SUBST(WFLAGS, [$WFLAGS])
 
 # Use the "libtoolize" command.
-LT_INIT
+LT_INIT([win32-dll])
 # Needed to build a "Shared/Dynamic" libraries.
 AC_ENABLE_SHARED
-AC_DISABLE_STATIC
+AC_ENABLE_STATIC
 
 
 # [ Required ] Creating Output files (list all "Makefile" locations)
